@@ -28,8 +28,8 @@
 
 ## Rotas
 
-1. Para criar usuarios acesse a rota [http://localhost:3333/users] utilizando o metodo POST;
-Corpo da requicição:
+1. Para criar usuarios acesse a rota [http://localhost:3333/users] utilizando o metodo POST;<br />
+Corpo da requicição:<br />
 `
 {
 	"name": "william",
@@ -38,8 +38,8 @@ Corpo da requicição:
 }
 `
 
-2. Para listar usuarios acesse a rota [http://localhost:3333/users] utilizando o metodo GET;
-Resposta:
+2. Para listar usuarios acesse a rota [http://localhost:3333/users] utilizando o metodo GET;<br />
+Resposta:<br />
 `
 [
   {
@@ -61,8 +61,8 @@ Resposta:
 ]
 `
 
-3. Para criar address acesse a rota [http://localhost:3333/users/:user_id/addresses] utilizando o metodo POST;
-Corpo da requicição: 
+3. Para criar address acesse a rota [http://localhost:3333/users/:user_id/addresses] utilizando o metodo POST;<br />
+Corpo da requicição: <br />
 `
 {
 	"zipcode": "15995-014",
@@ -71,8 +71,8 @@ Corpo da requicição:
 }
 `
 
-4. Para listar address acesse a rota [http://localhost:3333/users/:user_id/addresses] utilizando o metodo GET;
-Resposta:
+4. Para listar address acesse a rota [http://localhost:3333/users/:user_id/addresses] utilizando o metodo GET;<br />
+Resposta:<br />
 `
 {
   "id": 2,
@@ -95,16 +95,16 @@ Resposta:
 }
 `
 
-5. Para criar techs acesse a rota [http://localhost:3333/users/:user_id/techs] utilizando o metodo POST;
-Corpo da requicição:
+5. Para criar techs acesse a rota [http://localhost:3333/users/:user_id/techs] utilizando o metodo POST;<br />
+Corpo da requicição:<br />
 `
 {
 	"name": "node"
 }
 `
 
-6. Para listar techs acesse a rota [http://localhost:3333/users/:user_id/techs] utilizando o metodo GET;
-Resposta:
+6. Para listar techs acesse a rota [http://localhost:3333/users/:user_id/techs] utilizando o metodo GET;<br />
+Resposta:<br />
 `
 {
   "id": 1,
@@ -136,16 +136,16 @@ Resposta:
 }
 `
 
-7. Para apagar techs acesse a rota [http://localhost:3333/users/:user_id/techs] utilizando o metodo DELETE;
-Corpo da requicição:
+7. Para apagar techs acesse a rota [http://localhost:3333/users/:user_id/techs] utilizando o metodo DELETE;<br />
+Corpo da requicição:<br />
 `
 {
 	"name": "node"
 }
 `
 
-8. Para listar techs acesse a rota [http://localhost:3333/users/techs] utilizando o metodo GET;
-Resposta:
+8. Para listar techs acesse a rota [http://localhost:3333/users/techs] utilizando o metodo GET;<br />
+Resposta:<br />
 `
 [
   {
@@ -172,25 +172,25 @@ Resposta:
 9. Para realizar filtros entre users, address e techs acesse a rota [/reports/:email/:street/:tech] utilizando o metodo GET; <br />
 Resposta: <br />
 `
-[<br />
-  {<br />
-    "id": 1,<br />
-    "name": "william gs",<br />
-    "email": "williams@gmail.com",<br />
-    "addresses": [<br />
-      {<br />
-        "id": 1,<br />
-        "zipcode": "15995-014",<br />
-        "street": "SP",<br />
-        "number": "650"<br />
-      }<br />
-    ],<br />
-    "techs": [<br />
-      {<br />
-        "id": 1,<br />
-        "name": "react"<br />
-      }<br />
-    ]<br />
-  }<br />
+[
+  {
+    "id": 1,
+    "name": "william gs",
+    "email": "williams@gmail.com",
+    "addresses": [
+      {
+        "id": 1,
+        "zipcode": "15995-014",
+        "street": "SP",
+        "number": "650"
+      }
+    ],
+    "techs": [
+      {
+        "id": 1,
+        "name": "react"
+      }
+    ]
+  }
 ]
 `
