@@ -172,25 +172,25 @@ Resposta:
 9. Para realizar filtros entre users, address e techs acesse a rota [/reports/:email/:street/:tech] utilizando o metodo GET; <br />
 Resposta: <br />
 `
-[
-  {
-    "id": 1,
-    "name": "william gs",
-    "email": "williams@gmail.com",
-    "addresses": [
-      {
-        "id": 1,
-        "zipcode": "15995-014",
-        "street": "SP",
-        "number": "650"
-      }
-    ],
-    "techs": [
-      {
-        "id": 1,
-        "name": "react"
-      }
-    ]
-  }
+[<br />
+  {<br />
+    "id": 1,<br />
+    "name": "william gs",<br />
+    "email": "williams@gmail.com",<br />
+    "addresses": [<br />
+      {<br />
+        "id": 1,<br />
+        "zipcode": "15995-014",<br />
+        "street": "SP",<br />
+        "number": "650"<br />
+      }<br />
+    ],<br />
+    "techs": [<br />
+      {<br />
+        "id": 1,<br />
+        "name": "react"<br />
+      }<br />
+    ]<br />
+  }<br />
 ]
 `
