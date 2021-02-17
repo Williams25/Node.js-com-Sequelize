@@ -24,21 +24,23 @@
 4. Altere as credencias dentro de `/src/config/database.js`;
 5. Rode `npx sequelize db:create` para criar o banco de dados;
 6. Rode `npm run migrate` para executar as migrations;
-7. Rode `npm dev` para iniciar o servidor.
-8. Importe o arquivo `Insomnia_2019-10-16.json` desse repositório no Insomnia;
+7. Rode `npm dev` para iniciar o servidor;
 
 ## Rotas
 
-1. Para criar usuarios acesse a rota [http://localhost:3333/users] utilizando o metodo POST.
-Corpo da requicição: 
+1. Para criar usuarios acesse a rota [http://localhost:3333/users] utilizando o metodo POST;
+Corpo da requicição:
+`
 {
 	"name": "william",
 	"email": "william007.gabriel@gmail.com",
 	"age": 21
 }
+`
 
-2. Para listar usuarios acesse a rota [http://localhost:3333/users] utilizando o metodo GET.
+2. Para listar usuarios acesse a rota [http://localhost:3333/users] utilizando o metodo GET;
 Resposta:
+`
 [
   {
     "id": 1,
@@ -57,17 +59,21 @@ Resposta:
     "updatedAt": "2021-02-17T21:05:57.884Z"
   }
 ]
+`
 
-3. Para criar address acesse a rota [http://localhost:3333/users/:user_id/addresses] utilizando o metodo POST.
+3. Para criar address acesse a rota [http://localhost:3333/users/:user_id/addresses] utilizando o metodo POST;
 Corpo da requicição: 
+`
 {
 	"zipcode": "15995-014",
 	"street": "RJ", 
 	"number": "650", 
 }
+`
 
-4. Para listar address acesse a rota [http://localhost:3333/users/:user_id/addresses] utilizando o metodo GET.
+4. Para listar address acesse a rota [http://localhost:3333/users/:user_id/addresses] utilizando o metodo GET;
 Resposta:
+`
 {
   "id": 2,
   "name": "taty",
@@ -87,15 +93,19 @@ Resposta:
     }
   ]
 }
+`
 
-5. Para criar techs acesse a rota [http://localhost:3333/users/:user_id/techs] utilizando o metodo POST.
+5. Para criar techs acesse a rota [http://localhost:3333/users/:user_id/techs] utilizando o metodo POST;
 Corpo da requicição:
+`
 {
 	"name": "node"
 }
+`
 
-6. Para listar techs acesse a rota [http://localhost:3333/users/:user_id/techs] utilizando o metodo GET.
+6. Para listar techs acesse a rota [http://localhost:3333/users/:user_id/techs] utilizando o metodo GET;
 Resposta:
+`
 {
   "id": 1,
   "name": "william",
@@ -124,15 +134,19 @@ Resposta:
     }
   ]
 }
+`
 
-7. Para apagar techs acesse a rota [http://localhost:3333/users/:user_id/techs] utilizando o metodo DELETE.
+7. Para apagar techs acesse a rota [http://localhost:3333/users/:user_id/techs] utilizando o metodo DELETE;
 Corpo da requicição:
+`
 {
 	"name": "node"
 }
+`
 
-8. Para listar techs acesse a rota [http://localhost:3333/users/techs] utilizando o metodo GET.
+8. Para listar techs acesse a rota [http://localhost:3333/users/techs] utilizando o metodo GET;
 Resposta:
+`
 [
   {
     "id": 1,
@@ -153,9 +167,11 @@ Resposta:
     "updatedAt": "2021-02-17T20:34:23.053Z"
   }
 ]
+`
 
-9. Para realizar filtros entre users, address e techs acesse a rota [/reports/:email/:street/:tech] utilizando o metodo GET.
+9. Para realizar filtros entre users, address e techs acesse a rota [/reports/:email/:street/:tech] utilizando o metodo GET;
 Resposta:
+`
 [
   {
     "id": 1,
@@ -177,3 +193,4 @@ Resposta:
     ]
   }
 ]
+`
