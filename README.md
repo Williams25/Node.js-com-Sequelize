@@ -169,8 +169,8 @@ Resposta:
 ]
 `
 
-9. Para realizar filtros entre users, address e techs acesse a rota [/reports/:email/:street/:tech] utilizando o metodo GET;
-Resposta:
+9. Para realizar filtros entre users, address e techs acesse a rota [/reports/:email/:street/:tech] utilizando o metodo GET; <br />
+Resposta: <br />
 `
 [
   {
